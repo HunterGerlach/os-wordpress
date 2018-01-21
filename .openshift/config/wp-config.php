@@ -127,12 +127,9 @@ if ( !defined('ABSPATH') )
 if ( !defined('WP_PLUGIN_DIR') && is_link(ABSPATH . '/wp-content/plugins') )
   define('WP_PLUGIN_DIR', realpath(ABSPATH . '/wp-content/plugins'));
 
-// ...and the themes directory
-if ( !defined('TEMPLATEPATH') && is_link(ABSPATH . '/wp-content/themes') )
-  define('TEMPLATEPATH', realpath(ABSPATH . '/wp-content/themes'));
-
 // sets up WordPress vars and included files
 require_once(ABSPATH . 'wp-settings.php');
 
+// Additional Mercurious Settings
 define('WP_HOME', 'https://wordpress.local');
 define('WP_SITEURL', 'https://wordpress.local');
